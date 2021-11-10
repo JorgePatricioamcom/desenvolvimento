@@ -1,0 +1,25 @@
+//Rextester.Program.Main is the entry point for your code. Don't change it.
+//Microsoft (R) Visual C# Compiler version 2.9.0.63208 (958f2354)
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+namespace Rextester
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            float valor, percentual, total;
+            
+            valor = 2450;
+            percentual = 5;
+            total = valor * (percentual / 100);
+            //Your code goes here
+            total = total + valor;
+            Console.WriteLine("O valor inicial de "+valor+" somando "+percentual+"% resulta em:" + total);
+        }
+    }
+}
