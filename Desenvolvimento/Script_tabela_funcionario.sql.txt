@@ -1,0 +1,6 @@
+create table tb_funcionario (cod_funcionario number, nom_funcionario varchar2(50));
+/
+insert into tb_funcionario (cod_funcionario, nom_funcionario) values(1, 'JORGE');
+/
+select * from tb_funcionario;
+/
