@@ -1,0 +1,17 @@
+declare
+   cursor cFuncionario is
+      select cod_funcionario, 
+             nom_funcionario
+        from tb_funcionario
+       where 1 = 1;
+   nome_funcionario varchar2(50);
+   codigo_funcionario number;
+begin
+
+    for registro in cFuncionario loop
+       codigo_funcionario := registro.cod_funcionario;
+       nome_funcionario := registro.nom_funcionario;
+       dbms_output.put_line('Codigo:'||registro.cod_funcionario||' Nome:'||registro.nom_funcionario);
+    end loop;
+
+end;
