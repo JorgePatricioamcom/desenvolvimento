@@ -3,7 +3,7 @@ declare
       select cod_funcionario, 
              nom_funcionario
         from tb_funcionario
-       where 1 = 1;
+       where cod_funcionario is not null;
    nome_funcionario varchar2(50);
    codigo_funcionario number;
 begin
